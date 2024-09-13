@@ -1,0 +1,254 @@
+.red-background {
+    position: relative;
+    top: -40px;
+  }
+  
+  .red-background .search-box {
+    padding: 0 20px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    background: linear-gradient(red,black);
+  
+    .nav-menu a {
+        color: white;
+        text-decoration: none;
+    }
+  
+    .icon-container {
+        display: flex;
+        gap: 8px;
+        align-items: center;
+  
+        h2 {
+            letter-spacing: 2px;
+        }
+    }
+  }
+  
+  .movie-section {
+    background-color: rgb(240, 240, 240);
+    display: flex;
+    padding: 80px 0;
+    flex-direction: column;
+    align-items: center;
+  
+    nav ul {
+        padding: 15px 30px;
+        display: flex;
+        gap: 10px;
+        justify-content: center;
+        flex-wrap: wrap;
+        
+        li a {
+            font-weight: 400;
+            color: #333;
+            &:hover {
+                color: #c0392b;
+                font-weight: 700;
+                transition: 0.2s;
+            }
+        }
+    }
+  
+    p {
+        color: rgb(160, 160, 160);
+        text-align: center;
+        text-indent: 20px;
+        padding: 20px;
+        
+        &::selection {
+            color: white;
+            background-color: #c0392b;
+        }
+    }
+  
+    span {
+        margin-bottom: 30px;
+        width: 200px;
+        height: 8px;
+        background: linear-gradient(red,black);
+    }
+  
+    .title-container {
+        display: flex;
+        align-items: flex-end;
+        gap: 8px;
+        
+        &:hover h2 {
+            transition: 0.5s;
+            letter-spacing: 12px;
+            color: #c0392b;
+        }
+        
+        &:hover h6 {
+            transition: 0.5s;
+            letter-spacing: 6px;
+            color: #c0392b;
+        }
+        
+        h6 {
+            font-size: 22px;
+            padding-bottom: 10px;
+            letter-spacing: 3px;
+            color: rgb(160, 160, 160);
+        }
+  
+        h2 {
+            font-size: 45px;
+            letter-spacing: 6px;
+        }
+    }
+  }
+  
+  .red-background {
+    .card-container {
+        display: flex;
+        margin-bottom: 40px;
+        flex-wrap: wrap !important;
+        gap: 15px;
+        background-color: rgb(240, 240, 240);
+    }
+  
+    .card-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: fit-content;
+        width: 30%;
+        position: relative;
+    }
+  
+    .card-image {
+        height: 60%;
+        overflow: hidden;
+        
+        img {
+            object-fit: cover;
+            width: 100%;
+            transition: transform 0.3s ease;
+        }
+    }
+  
+    .card-details {
+        background-color: rgb(255, 255, 255);
+        width: 95%;
+        position: relative;
+        top: -30px;
+        z-index: 1;
+        padding: 15px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        box-shadow: rgba(0, 0, 0, 0.2) 0px 30px 30px, rgba(0, 0, 0, 0.15) 0px -10px 20px, rgba(0, 0, 0, 0.1) 0px 5px 10px, rgba(0, 0, 0, 0.2) 0px 10px 15px, rgba(0, 0, 0, 0.1) 0px -2px 4px;
+  
+        h2 {
+            text-align: center;
+            font-size: 24px;
+            width: 100%;
+            letter-spacing: 1px;
+            color: rgb(80, 80, 80);
+        }
+  
+        h6 {
+            font-size: 14px;
+            color: #888;
+        }
+  
+        p {
+            color: #888;
+        }
+  
+        a {
+            color: #888;
+            padding-bottom: 5px;
+            display: flex;
+            align-self: flex-start;
+            padding-top: 20px;
+            text-decoration: none;
+            border-bottom: 1px solid #888;
+        }
+  
+        span {
+            margin-left: 20px;
+            display: flex;
+            align-self: flex-start;
+            width: 70px;
+            height: 4px;
+            background: linear-gradient(red, black);
+        }
+    }
+  
+    .card-item:hover .card-details span {
+        margin-left: 0;
+        transition: 0.7s;
+    }
+  
+    .card-item:hover .card-details h2 {
+        letter-spacing: 3px;
+        transition: 0.7s;
+        color: rgb(0, 0, 0);
+    }
+  
+    .card-item:hover .card-details p {
+        color: rgb(0, 0, 0);
+    }
+  
+    .card-item:hover .card-details a {
+        color: rgb(0, 0, 0);
+    }
+  
+    .card-item:hover .card-details h6 {
+        color: rgb(0, 0, 0);
+    }
+  
+    .card-item:hover img {
+        transform: scale(1.1);
+        overflow: hidden;
+    }
+  }
+  
+  #footer {
+    text-align: center;
+    padding: 20px;
+    background-color: rgb(240, 240, 240);
+    color: #666;
+  }
+  
+  @media (max-width: 1250px) {
+    .card-container {
+        justify-content: center;
+    }
+  
+    .card-container .card-item {
+        width: 45%;
+    }
+  }
+  
+  @media (max-width: 992px) {
+    .movie-section .title-container h2 {
+        font-size: 40px;
+    }
+  
+    .card-container .card-item {
+        width: 70%;
+    }
+  }
+  
+  @media (max-width: 782px) {
+    .movie-section .title-container h2 {
+        font-size: 35px;
+    }
+  
+    .card-container .card-item {
+        width: 90%;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .card-container .card-item {
+        width: 100%;
+    }
+  }
+  

@@ -1,0 +1,45 @@
+.banner {
+  background: url('https://cdn.playbackonline.ca/wp/wp-content/uploads/2020/05/Screen-Shot-2020-05-04-at-1.41.10-PM.png') no-repeat center center/cover;
+  opacity: 0.9;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  .banner-text {
+    h2 {
+      font-size: 3rem;
+      letter-spacing: 2px;
+      color: white;
+    }
+
+    h3 {
+      font-size: 2rem;
+      margin: 10px 0;
+      color: white;
+    }
+
+    p {
+      font-size: 1.2rem;
+      margin: 5px 0;
+      color: white;
+
+      a {
+        color: #ff0000;
+        text-decoration: none;
+      }
+    }
+  }
+
+  /* Hover Effect */
+  .banner-text:hover h2,
+  .banner-text:hover h3,
+  .banner-text:hover p {
+    color: darkred;
+  }
+
+  .banner-text:hover h2 {
+    letter-spacing: 4px; /* Adjust letter-spacing more noticeably on hover */
+  }
+}
